@@ -15,7 +15,7 @@ public class Rocket {
     private ImageIcon rocket;
 
     Rocket(Point p){
-        rocket = new ImageIcon("rocket.png");
+        rocket = new ImageIcon("rocket.jpg");
         region = new Rectangle(p.x,p.y, 40, 40);
         x = 15;y = 15;changeX = 0;changeY= 0.02;fuel = 2000;maxY = -4;Up = false;Right = false;Left = false;
     }
