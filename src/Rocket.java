@@ -58,7 +58,7 @@ public class Rocket {
 
     protected Point bottomLeft()  { return new Point((int)x,(int)y+30); }
     protected Point bottomRight() { return new Point((int)x+30, (int)y+30); }
-    
+
 
     protected void paint(Graphics g){
         g.drawImage(rocket.getImage(), (int)x, (int)y, region.width,region.height,null);
@@ -76,10 +76,6 @@ public class Rocket {
         this.Left = Left;
     }
 
-    protected void Crash(){
-        rocket = new ImageIcon("crash.jpg");
-        JOptionPane.showMessageDialog(null, "You Crashed");
-    }
 
     protected void FaultyLand(){
         rocket = new ImageIcon("crash.jpg");

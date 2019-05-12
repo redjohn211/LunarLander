@@ -15,6 +15,7 @@ public LaunchPanel(){
 setPreferredSize(new Dimension(400,400));
     s = new Point(250, 250);
 r = new Rocket(new Point(250,50));
+l = new LandingZone(new Point(20,390));
 mountains = new ArrayList<Obstacle>();
 addKeyListener(new MoveRocket());
     setFocusable(true);
